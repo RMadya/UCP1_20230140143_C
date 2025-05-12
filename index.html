@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EducationRoom - Aplikasi Belajar Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Learning<span>Room</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="features.html">Fitur</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-flex">
+            <div class="hero-content">
+                <h2>Belajar Lebih Mudah dengan Learning Room</h2>
+                <p>Aplikasi pembelajaran online interaktif dengan metode terbaru untuk semua usia.</p>
+                <a href="contact.html" class="cta-button">Daftar Sekarang</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://satuguru.id/wp-content/uploads/2024/03/quiziz_paper-850x560.png" alt="Siswa Belajar Online">
+            </div>
+        </div>
+    </section>
+
+    <section class="features-overview">
+        <div class="container">
+            <h2>Kenapa Memilih Learning Room?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Guru Berpengalaman</h3>
+                    <p>Diajar oleh pengajar profesional dengan metode terbaik.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Belajar Interaktif</h3>
+                    <p>Kuis dan simulasi membuat belajar lebih menyenangkan.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Fleksibel</h3>
+                    <p>Belajar kapan saja, di mana saja sesuai jadwal Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 LearningRoom. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <div id="promo-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="document.getElementById('promo-popup').style.display='none'">&times;</span>
+            <h3>Promo Spesial!</h3>
+            <p>Dapatkan diskon 50% untuk pendaftaran bulan ini. Gunakan kode: <strong>STILLEARN</strong></p>
+            <button id="popup-cta" onclick="location.href='contact.html'">Daftar Sekarang</button>
+        </div>
+    </div>
+
+    <script>
+        // Tampilkan popup setelah 3 detik
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById('promo-popup').style.display = 'block';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
